@@ -34,7 +34,7 @@ const BookingCalculator = () => {
         </h1>
 
         <div className="space-y-6">
-          <Popover>
+          <Popover modal={true}>
             <PopoverTrigger asChild>
               <Button
                 variant="ghost"
@@ -61,13 +61,13 @@ const BookingCalculator = () => {
           {journeyDate && bookingDate && (
             <div className="glass-card p-8 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div>
-                <h2 className="text-2xl font-bold text-accent mb-2">Journey Date:</h2>
+                <h2 className="text-2xl font-bold text-white/90 mb-2">Journey Date:</h2>
                 <p className="text-foreground text-xl">({getDayName(journeyDate)})</p>
                 <p className="text-foreground text-xl">{format(journeyDate, "dd-MMMM-yyyy")}</p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-accent mb-2">Booking Date:</h2>
+                <h2 className="text-2xl font-bold text-white/90 mb-2">Booking Date:</h2>
                 <p className="text-foreground text-xl">({getDayName(bookingDate)})</p>
                 <p className="text-foreground text-xl">
                   {format(bookingDate, "dd-MMMM-yyyy")} - {format(bookingDate, "hh:mm a")}
