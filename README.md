@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+Project Overview: Check Railway Dates for Journey
 
-## Project info
+This is a modern, responsive web application for booking railway tickets. It provides an intuitive UI for selecting journey dates, stations, and downloading booking confirmations. The project is built using Vite, React, TypeScript, shadcn-ui, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/68902d00-de49-4d30-a28d-782f3de422da
 
-## How can I edit this code?
+Features:
+Responsive design for desktop and mobile
+Select source, destination, and journey date
+View ticket availability in real-time
+Download booking confirmation as PDF
+Clean and modern UI
 
-There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/68902d00-de49-4d30-a28d-782f3de422da) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Getting Started
+1-Clone the repository
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+2-Install dependencies
+pnpm install
+# or npm install / yarn install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+3-Run the development server
+pnpm run dev
+# or npm run dev
 
-**Edit a file directly in GitHub**
+Open your browser at http://localhost:5173 (default for Vite) to see the app.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Build for Production:
+pnpm run build
+# or npm run build
+The production-ready files will be generated in the dist folder (or build for CRA).
 
-**Use GitHub Codespaces**
+Deployment:
+You can deploy this project using your preferred platform:
+Vercel: connect the repository and deploy automatically
+GitHub Pages: push the dist folder to the gh-pages branch
+Other platforms: any static hosting service that serves HTML/JS/CSS
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Tech Stack:
+React – UI library
+TypeScript – Type-safe JavaScript
+Tailwind CSS – Utility-first styling
 
-## What technologies are used for this project?
+Contributing:
+Fork the repository
+Create a branch: git checkout -b feature/YourFeature
+Commit your changes: git commit -m "Add feature"
+Push the branch: git push origin feature/YourFeature
+Open a Pull Request
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/68902d00-de49-4d30-a28d-782f3de422da) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+License:
+MIT License
