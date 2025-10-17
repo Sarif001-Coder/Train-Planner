@@ -81,6 +81,12 @@ const BookingCalculator = () => {
               >
                 Clear
               </Button>
+
+              <div className="glass-card p-6 mt-6 border-2 border-white/30">
+                <p className="text-foreground text-lg text-center leading-relaxed">
+                  For Travelling on <span className="font-bold">{format(journeyDate, "dd-MMMM-yyyy")}</span> you need to book your tickets on <span className="font-bold">{format(bookingDate, "dd-MMMM-yyyy")}</span> at morning <span className="font-bold">8:00 AM</span>
+                </p>
+              </div>
             </div>
           )}
         </div>
