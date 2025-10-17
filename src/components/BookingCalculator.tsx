@@ -30,7 +30,7 @@ const BookingCalculator = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="glass-card p-12 max-w-4xl w-full space-y-8">
         <h1 className="text-5xl md:text-6xl font-bold text-center text-foreground mb-12">
-          Let's book your trip
+          Train journey planner
         </h1>
 
         <div className="space-y-6">
