@@ -1,9 +1,9 @@
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
-
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
@@ -41,3 +41,11 @@ This project is built with:
 - Tailwind CSS
 
 ## How can I deploy this project?
+This project is deployed using Vercel
+You can follow these simple steps to deploy your own version:
+
+- Fork this repository or clone it to your local machine.
+- Go to your Vercel Dashboard and click “New Project”.
+- Import your GitHub repository.
+- Vercel will automatically detect the frameworks.
+- Click “Deploy” — and your app will be live in seconds!
