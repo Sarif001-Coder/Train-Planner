@@ -55,15 +55,17 @@ const BookingCalculator = () => {
                 initialFocus
                 className="p-3 pointer-events-auto"
               />
-              <div className="p-3 pt-0 flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="bg-white text-primary hover:bg-white/90 px-12 py-2 rounded-lg font-medium transition-all w-full"
-                  onClick={() => document.body.click()}
-                >
-                  Ok
-                </Button>
-              </div>
+              {journeyDate && (
+                <div className="p-3 pt-0 flex justify-center">
+                  <Button
+                    variant="secondary"
+                    className="bg-white text-primary hover:bg-white/90 px-12 py-2 rounded-lg font-medium transition-all w-full"
+                    onClick={() => document.body.click()}
+                  >
+                    Ok
+                  </Button>
+                </div>
+              )}
             </PopoverContent>
           </Popover>
 
