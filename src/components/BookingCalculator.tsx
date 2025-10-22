@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 const BookingCalculator = () => {
   const [journeyDate, setJourneyDate] = useState<Date | undefined>(undefined);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const calculateBookingDate = (journey: Date) => {
     const booking = new Date(journey);
@@ -34,7 +35,7 @@ const BookingCalculator = () => {
         </h1>
 
         <div className="space-y-6">
-          <Popover modal={true}>
+          <Popover modal={true} open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
             <PopoverTrigger asChild>
               <Button
                 variant="ghost"
@@ -60,7 +61,7 @@ const BookingCalculator = () => {
                   <Button
                     variant="secondary"
                     className="bg-white text-primary hover:bg-white/90 px-12 py-2 rounded-lg font-medium transition-all w-full"
-                    onClick={() => document.body.click()}
+                    onClick={() => setIsCalendarOpen(false)}
                   >
                     Ok
                   </Button>
