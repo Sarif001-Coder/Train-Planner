@@ -55,6 +55,15 @@ const BookingCalculator = () => {
                 initialFocus
                 className="p-3 pointer-events-auto"
               />
+              <div className="p-3 pt-0 flex justify-center">
+                <Button
+                  variant="secondary"
+                  className="bg-white text-primary hover:bg-white/90 px-12 py-2 rounded-lg font-medium transition-all w-full"
+                  onClick={() => document.body.click()}
+                >
+                  Ok
+                </Button>
+              </div>
             </PopoverContent>
           </Popover>
 
@@ -82,18 +91,10 @@ const BookingCalculator = () => {
                 Clear
               </Button>
 
-              <div className="glass-card p-6 mt-6 border-2 border-white/30 space-y-4">
+              <div className="glass-card p-6 mt-6 border-2 border-white/30">
                 <p className="text-foreground text-lg text-center leading-relaxed">
                   For Travelling on <span className="font-bold">{format(journeyDate, "dd-MMMM-yyyy")}</span> you need to book your tickets on <span className="font-bold">{format(bookingDate, "dd-MMMM-yyyy")}</span> at morning <span className="font-bold">8:00 AM</span>
                 </p>
-                <div className="flex justify-center">
-                  <Button
-                    variant="secondary"
-                    className="bg-white text-primary hover:bg-white/90 px-12 py-3 text-lg rounded-lg font-medium transition-all"
-                  >
-                    Ok
-                  </Button>
-                </div>
               </div>
             </div>
           )}
