@@ -35,6 +35,7 @@ const BookingCalculator = () => {
         </h1>
 
         <div className="space-y-6">
+          <p className="text-foreground text-lg font-medium">Please mention your desired journey date</p>
           <Popover modal={true} open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
             <PopoverTrigger asChild>
               <Button
